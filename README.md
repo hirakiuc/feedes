@@ -1,8 +1,8 @@
 # Feedes
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/feedes`. To experiment with that code, run `bin/console` for an interactive prompt.
+A ruby library to fetch and parse rss feed.
 
-TODO: Delete this and the text above, and describe your gem
+This gem will support RSS1.0, RSS2.0, Atom.
 
 ## Installation
 
@@ -22,10 +22,6 @@ Or install it yourself as:
 
 ## Usage
 
-- atom
-- rdf
-- rss
-
 ```ruby
 require 'feedes'
 
@@ -33,20 +29,6 @@ feed = Feedes.fetch('https://example.com/path/to/page.rss')
 feed.items.each do |item|
   p item
 end
-```
-
-```ruby
-Feedes::Fetcher
-
-Feedes::Document::Base
-Feedes::Document::Atom
-Feedes::Document::Rss
-Feedes::Document::Rdf
-
-Feedes::Item::Base
-Feedes::Item::Atom
-Feedes::Item::Rss
-Feedes::Item::Rdf
 ```
 
 ## Development
