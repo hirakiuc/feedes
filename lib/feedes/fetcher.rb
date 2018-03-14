@@ -21,9 +21,8 @@ module Feedes
     # Fetch and Parse the feed.
     #
     # @param [String] url the feed url
-    # @param [Symbol] type the feed type(:rdf, :rss, :atom)
     # @return [String] fetched result.
-    def fetch(url, type)
+    def fetch(url)
       uri = URI.parse(url)
 
       head = send_request(:head, uri, {})

@@ -19,7 +19,9 @@ module Feedes
       #-------------------------------------------
       # subclass should override this method
       def begin_element(_path, _name, _attrs = {}); end
+
       def finish_element(_path, _name); end
+
       def found_chars(_path, _name, _string); end
       #-------------------------------------------
 
@@ -30,7 +32,8 @@ module Feedes
       end
 
       def start_element_namespace(
-        name, attrs = [], prefix = nil, _uri = nil, _ns = [])
+        name, attrs = [], prefix = nil, _uri = nil, _ns = []
+      )
 
         push_stack(name, prefix)
         @buffer = ''

@@ -1,4 +1,6 @@
-require_relative "./base.rb"
+# frozen_string_literal: true
+
+require_relative './base.rb'
 
 module Feedes
   module Document
@@ -10,7 +12,7 @@ module Feedes
         @type = :unknown
       end
 
-      def finish_element(path, name)
+      def finish_element(path, _name)
         case path
         when '//rdf:RDF' then @type = :rdf
         when '//rss'     then @type = :rss
