@@ -22,16 +22,22 @@ module Feedes
     #
     # @param [String] url the feed url
     # @return [String] fetched result.
-    def fetch(url)
+    def fetch(url, options = {})
       uri = URI.parse(url)
 
-      head = send_request(:head, uri, {})
+      headers = request_headers(options)
+
+      head = send_request(:head, uri, headers)
       acceptable_content!(head.headers[:content_type])
 
-      send_request(:get, uri, {})
+      send_request(:get, uri, headers)
     end
 
     private
+
+    def request_headers(options)
+      { 'User-Agent' => 'A ruby app with feedes' }.merge(options[:headers] || {})
+    end
 
     def acceptable_content!(content_type)
       return if acceptable_content?(content_type)
