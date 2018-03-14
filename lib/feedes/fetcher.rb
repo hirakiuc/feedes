@@ -8,38 +8,71 @@ module Feedes
     attr_reader :url
     attr_reader :results
 
+    def initialize
+      @accept_types = %w(
+        application/xhtml+xml
+        application/atom+xml
+        application/x.atom+xml
+        application/rss+xml
+        application/xml
+      )
+    end
+
     # Fetch and Parse the feed.
     #
     # @param [String] url the feed url
     # @param [Symbol] type the feed type(:rdf, :rss, :atom)
-    # @return [Feedes::Result] fetch and parse result
+    # @return [String] fetched result.
     def fetch(url, type)
-      head = send_request(:head, @uri, headers)
+      uri = URI.parse(url)
+
+      head = send_request(:head, uri, {})
       acceptable_content!(head.headers[:content_type])
 
-      res = send_request(:get)
-
-      doc = get_document(type)
-
-      parser = get_parser(type)
-      parser.parse(res)
-
-      Feedes::Result.new(url, type, parser)
+      send_request(:get, uri, {})
     end
 
     private
 
-    def get_parser(type)
-      Nokogiri::XML::SAX::Parser.new(get_document_class(type))
+    def acceptable_content!(content_type)
+      return if acceptable_content?(content_type)
+
+      raise "Can't accpet content-type: #{content_type}"
     end
 
-    def get_document_class(type)
-      case type
-      when :atom  then Feedes::Document::Atom
-      when :rss   then Feedes::Document::Rss
-      when :rdf   then Feedes::Document::Rdf
-      else             throw "UnSupported type: #{type}"
-      end
+    def acceptable_content?(content_type)
+      type = content_type
+
+      pattern_types = @accept_types.select { |v| v.instance_of?(Regexp) }
+      return true unless pattern_types.select { |v| type =~ v }.any?
+
+      fixed_types = @accept_types.select { |v| v.instance_of?(String) }
+      fixed_types.include?(type)
+    end
+
+    def request_options(method, uri, headers)
+      {
+        method: method,
+        url: uri.to_s,
+        headers: headers,
+        max_redirects: 10,
+        verify_ssl: OpenSSL::SSL::VERIFY_NONE,
+        timeout: 30
+      }
+    end
+
+    def send_request(method, uri, headers)
+      options = request_options(method, uri, headers)
+      @response = RestClient::Request.execute(options)
+
+      content_type = @response.headers[:content_type]
+      raise "Got http status code(#{@response.code}) by #{method} request from #{uri}" \
+        unless @response.code == 200
+      acceptable_content!(content_type)
+
+      @response
+    rescue => e
+      raise e
     end
   end
 end

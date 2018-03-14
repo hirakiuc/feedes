@@ -1,8 +1,12 @@
+# frozen_string_literal: true
+
 require 'nokogiri'
 
 module Feedes
   module Document
     class Base < ::Nokogiri::XML::SAX::Document
+      attr_reader :items, :feed_meta
+
       def initialize
         @items = []
         @feed_meta = {}

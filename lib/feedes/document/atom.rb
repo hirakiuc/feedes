@@ -11,10 +11,10 @@ module Feedes
         case path
         when '//feed/entry/link'
           @result[:link] = {} unless @result[:link]
-          @result[:link][rel.to_sym] = value
+          @result[:link][rel.to_sym] = value unless rel.nil?
         when '//feed/link'
           @feed_meta[:link] = {} unless @feed_meta[:link]
-          @feed_meta[:link][rel.to_sym] = value
+          @feed_meta[:link][rel.to_sym] = value unless rel.nil?
         else
         end
       end
@@ -34,7 +34,7 @@ module Feedes
         return unless path == '//feed/entry'
         return if @result.empty?
 
-        @results.push(@result)
+        @items.push(@result)
         @result = {}
       end
 
