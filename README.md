@@ -2,7 +2,7 @@
 
 A ruby library to fetch and parse rss feed.
 
-This gem will support RSS1.0, RSS2.0, Atom.
+This gem supports RSS1.0(RDF), RSS2.0, Atom.
 
 ## Installation
 
@@ -26,7 +26,7 @@ Or install it yourself as:
 require 'feedes'
 
 feed = Feedes.fetch('https://example.com/path/to/page.rss')
-feed.items.each do |item|
+feed.each_item do |item|
   p item
 end
 ```
@@ -39,5 +39,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/feedes.
+Bug reports and pull requests are welcome on GitHub at https://github.com/hirakiuc/feedes.
 
