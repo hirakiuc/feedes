@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+require_relative './atom_item.rb'
+
 module Feedes
   module Document
     class Atom < Base
@@ -5,17 +9,16 @@ module Feedes
         return unless name == :link
 
         rel = attrs[:rel]
-        value = {href: attrs[:href]}
+        value = { href: attrs[:href] }
         value[:title] = attrs[:title] if attrs[:title]
 
         case path
         when '//feed/entry/link'
           @result[:link] = {} unless @result[:link]
-          @result[:link][rel.to_sym] = value
+          @result[:link][rel.to_sym] = value unless rel.nil?
         when '//feed/link'
           @feed_meta[:link] = {} unless @feed_meta[:link]
-          @feed_meta[:link][rel.to_sym] = value
-        else
+          @feed_meta[:link][rel.to_sym] = value unless rel.nil?
         end
       end
 
@@ -23,7 +26,7 @@ module Feedes
         if path == "//feed/entry/#{name}"
           v = convert_chars(name, str)
           @result[name] = v if v
-        elsif path == "//feed/entry/author/name"
+        elsif path == '//feed/entry/author/name'
           @result[:author] = str
         elsif name != :entry && path == "//feed/#{name}"
           @feed_meta[name] = str
@@ -34,7 +37,7 @@ module Feedes
         return unless path == '//feed/entry'
         return if @result.empty?
 
-        @results.push(@result)
+        @items.push(AtomItem.new(@result))
         @result = {}
       end
 
@@ -44,10 +47,8 @@ module Feedes
         case name
         when :id, :title, :summary
           str
-        when :issued
-          DateTime.strptime(str, '%Y-%m-%dT%H:%M:%S%z')
-        else
-          nil
+        when :updated
+          Time.strptime(str, '%Y-%m-%dT%H:%M:%S%z')
         end
       end
     end
