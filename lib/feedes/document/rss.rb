@@ -7,7 +7,7 @@ module Feedes
     class Rss < Base
       def begin_element(path, name, attrs = {}); end
 
-      def finish_element(path, name)
+      def finish_element(path, _name)
         return unless path == '//rss/channel/item'
         return if @result.empty?
 
@@ -19,9 +19,8 @@ module Feedes
         if path == "//rss/channel/item/#{name}"
           v = convert_chars(name, str)
           @result[name] = v if v
-        elsif path == '//rss/channel/item'
-          return
         elsif path == "//rss/channel/#{name}"
+          return if name == 'item'
           @feed_meta[name.to_sym] = str if str
         end
       end
