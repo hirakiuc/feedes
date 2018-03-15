@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative './atom_item.rb'
+
 module Feedes
   module Document
     class Atom < Base
@@ -35,7 +37,7 @@ module Feedes
         return unless path == '//feed/entry'
         return if @result.empty?
 
-        @items.push(@result)
+        @items.push(AtomItem.new(@result))
         @result = {}
       end
 
@@ -45,7 +47,7 @@ module Feedes
         case name
         when :id, :title, :summary
           str
-        when :issued
+        when :updated
           Time.strptime(str, '%Y-%m-%dT%H:%M:%S%z')
         end
       end
