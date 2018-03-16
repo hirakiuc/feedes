@@ -2,10 +2,10 @@
 
 module Feedes
   class Result
-    attr_reader :feed, :items
+    attr_reader :meta, :items
 
     def initialize(meta, items)
-      @feed = meta
+      @meta = meta
       @items = items
     end
 
