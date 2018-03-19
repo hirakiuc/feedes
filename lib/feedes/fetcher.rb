@@ -8,19 +8,25 @@ module Feedes
     attr_reader :url
     attr_reader :results
 
-    def initialize
+    # Constructor
+    #
+    # @param [Hash] options
+    # @option options [Array] :content_types Array of acceptable content-type strings.
+    def initialize(options = {})
       @accept_types = %w(
         application/xhtml+xml
         application/atom+xml
         application/x.atom+xml
         application/rss+xml
         application/xml
-      )
+      ).concat(options[:content_types] || []).uniq
     end
 
     # Fetch and Parse the feed.
     #
     # @param [String] url the feed url
+    # @param [Hash] options
+    # @option options [Array] :headers Array of request header strings
     # @return [String] fetched result.
     def fetch(url, options = {})
       uri = URI.parse(url)
@@ -46,13 +52,8 @@ module Feedes
     end
 
     def acceptable_content?(content_type)
-      type = content_type
-
-      pattern_types = @accept_types.select { |v| v.instance_of?(Regexp) }
-      return true unless pattern_types.select { |v| type =~ v }.any?
-
-      fixed_types = @accept_types.select { |v| v.instance_of?(String) }
-      fixed_types.include?(type)
+      keys = content_type.split(';').map(&:strip)
+      keys.any? { |v| @accept_types.include?(v) }
     end
 
     def request_options(method, uri, headers)
@@ -73,7 +74,6 @@ module Feedes
       content_type = @response.headers[:content_type]
       raise "Got http status code(#{@response.code}) by #{method} request from #{uri}" \
         unless @response.code == 200
-      acceptable_content!(content_type)
 
       @response
     rescue => e

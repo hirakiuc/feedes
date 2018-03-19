@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>gihyo.jp：総合</title>
+ <subtitle>gihyo.jp（総合）の更新情報をお届けします</subtitle>
+ <id>http://gihyo.jp/</id>
+ <link href="http://gihyo.jp/"/>
+ <author>
+  <name>技術評論社</name>
+ </author>
+ <updated>2018-03-19T12:22:01+09:00</updated>
+ <rights>技術評論社 2018</rights>
+ <icon>http://gihyo.jp/assets/templates/gihyojp2007/image/header_logo_gihyo.gif</icon>
+ <entry>
+  <title>第35回　Meltdown and Spectre ── 書いて覚えるSwift入門</title>
+  <link href="http://gihyo.jp/dev/serial/01/swift-introduction/0035"/>
+  <id>http://gihyo.jp/dev/serial/01/swift-introduction/0035</id>
+  <published>2018-03-19T09:31:00+09:00</published>
+  <updated>2018-03-19T09:31:00+09:00</updated>
+ <author>
+  <name>小飼弾</name>
+ </author>
+  <category scheme="http://gihyo.jp/dev/serial/01/swift-introduction" term="書いて覚えるSwift入門" xml:lang="ja" />
+  <summary>2018年最初の大ニュースといえば，本誌Software Designの読者には毎号おなじみの結城浩さん，ではなくてMeltdown and Spectre。</summary>
+ </entry>
+ <entry>
+  <title>第123回　カード並べ ── きたみりゅうじの聞かせて珍プレー</title>
+  <link href="http://gihyo.jp/dev/serial/01/funny-play/0123"/>
+  <id>http://gihyo.jp/dev/serial/01/funny-play/0123</id>
+  <published>2018-03-19T09:30:00+09:00</published>
+  <updated>2018-03-19T09:30:00+09:00</updated>
+ <author>
+  <name>きたみりゅうじ</name>
+ </author>
+  <category scheme="http://gihyo.jp/dev/serial/01/funny-play" term="きたみりゅうじの聞かせて珍プレー" xml:lang="ja" />
+  <summary>私が新人のころなので約30年前のお話です。当時，某電気メーカーのメインフレームを使い，5～6人で仕事をしておりました。</summary>
+ </entry>
+ <entry>
+  <title>2018年3月16日号　Spectre/Meltdown対策さらにさらにその後・新マイクロコードの配布の準備，FirefoxとChromiumのSnapパッケージ ── Ubuntu Weekly Topics</title>
+  <link href="http://gihyo.jp/admin/clip/01/ubuntu-topics/201803/16"/>
+  <id>http://gihyo.jp/admin/clip/01/ubuntu-topics/201803/16</id>
+  <published>2018-03-16T10:11:00+09:00</published>
+  <updated>2018-03-16T10:11:00+09:00</updated>
+ <author>
+  <name>吉田史</name>
+ </author>
+  <category scheme="http://gihyo.jp/admin/clip/01/ubuntu-topics" term="Ubuntu Weekly Topics" xml:lang="ja" />
+  <summary>“Spectre”対策において必要なIntelのマイクロコードの提供が再開されたため，Ubuntuでもintel-microcodeパッケージのテストが開始されています。</summary>
+ </entry>
+ <entry>
+  <title>第140回　AsiaBSDCon 2018 ── BSD界隈四方山話</title>
+  <link href="http://gihyo.jp/admin/serial/01/bsd-yomoyama/0140"/>
+  <id>http://gihyo.jp/admin/serial/01/bsd-yomoyama/0140</id>
+  <published>2018-03-16T09:30:00+09:00</published>
+  <updated>2018-03-16T09:30:00+09:00</updated>
+ <author>
+  <name>後藤大地</name>
+ </author>
+  <category scheme="http://gihyo.jp/admin/serial/01/bsd-yomoyama" term="BSD界隈四方山話" xml:lang="ja" />
+  <summary>2018年3月8～11日までの4日間，*BSDの国際会議であるAsiaBSDCon 2018が開催されました。</summary>
+ </entry>
+ <entry>
+  <title>NTTスマートコネクト，クラウド上でセキュリティ機能を提供開始 ── ニュースリリース</title>
+  <link href="http://gihyo.jp/news/nr/2018/03/1501"/>
+  <id>http://gihyo.jp/news/nr/2018/03/1501</id>
+  <published>2018-03-15T18:19:00+09:00</published>
+  <updated>2018-03-15T18:19:00+09:00</updated>
+ <author>
+  <name>技術評論社</name>
+ </author>
+  <category scheme="http://gihyo.jp/news/nr" term="ニュースリリース" xml:lang="ja" />
+  <summary>エヌ・ティ・ティ・スマートコネクト（株）は，2018年4月2日（月）より，ネットワークセキュリティ機能をクラウド上で提供する新たなサービス「SmartConnect Network &amp; Security」を開始する。</summary>
+ </entry>
+ <entry>
+  <title>第1回　スマートスピーカーを支える技術 ── 優しいUI～ボイスユーザインターフェースで変わるコト</title>
+  <link href="http://gihyo.jp/dev/serial/01/voiceui/0001"/>
+  <id>http://gihyo.jp/dev/serial/01/voiceui/0001</id>
+  <published>2018-03-15T13:20:00+09:00</published>
+  <updated>2018-03-15T13:20:00+09:00</updated>
+ <author>
+  <name>傍島康雄</name>
+ </author>
+  <category scheme="http://gihyo.jp/dev/serial/01/voiceui" term="優しいUI～ボイスユーザインターフェースで変わるコト" xml:lang="ja" />
+  <summary>2017年，日本国内でいくつかのスマートスピーカーが登場しました。まず，その周辺の動向について紹介します。</summary>
+ </entry>
+ <entry>
+  <title>2018年3月第3週　次期OS「Android P」の開発者向けプレビュー版が公開 ── Android Weekly Topics</title>
+  <link href="http://gihyo.jp/lifestyle/clip/01/awt/201803/15"/>
+  <id>http://gihyo.jp/lifestyle/clip/01/awt/201803/15</id>
+  <published>2018-03-15T09:31:00+09:00</published>
+  <updated>2018-03-15T09:31:00+09:00</updated>
+ <author>
+  <name>傍島康雄</name>
+ </author>
+  <category scheme="http://gihyo.jp/lifestyle/clip/01/awt" term="Android Weekly Topics" xml:lang="ja" />
+  <summary>2018年3月第3週のAndroid関連のニュースをお届けします。</summary>
+ </entry>
+ <entry>
+  <title>2018年3月第3週号 1位は，良い事例から学ぶランディングページを改善するためのヒント，気になるネタは，LINEのタブに「LINEウォレット」が出現--決済・金融サービスを集約 ── 週刊Webテク通信</title>
+  <link href="http://gihyo.jp/design/clip/01/weekly-web-tech/201803/15"/>
+  <id>http://gihyo.jp/design/clip/01/weekly-web-tech/201803/15</id>
+  <published>2018-03-15T09:30:00+09:00</published>
+  <updated>2018-03-15T09:30:00+09:00</updated>
+ <author>
+  <name>芦之由</name>
+ </author>
+  <category scheme="http://gihyo.jp/design/clip/01/weekly-web-tech" term="週刊Webテク通信" xml:lang="ja" />
+  <summary>ネットで見かけたWebテク（Webテクニック・Webテクノロジー）記事から，Webデザイナーの目で厳選したネタを週刊で紹介するこのコーナー。今回は，2018年3月5日～3月11日の間に見つけた記事のベスト5です。</summary>
+ </entry>
+ <entry>
+  <title>2018年3月14日　Ubuntu，圧縮アルゴリズムzstdをサポートへ ── Linux Daily Topics</title>
+  <link href="http://gihyo.jp/admin/clip/01/linux_dt/201803/14"/>
+  <id>http://gihyo.jp/admin/clip/01/linux_dt/201803/14</id>
+  <published>2018-03-14T18:02:00+09:00</published>
+  <updated>2018-03-14T18:02:00+09:00</updated>
+ <author>
+  <name>階戸アキラ</name>
+ </author>
+  <category scheme="http://gihyo.jp/admin/clip/01/linux_dt" term="Linux Daily Topics" xml:lang="ja" />
+  <summary>UbuntuのコアデベロッパJulian Andres Klodeは3月12日，Ubuntu 18.04 LTSから，圧縮アルゴリズム「zstd」をdpkgおよびaptパッケージの圧縮に実装することを明らかにした。</summary>
+ </entry>
+ <entry>
+  <title>第512回　AndroidのGemini PDAをUbuntu端末っぽく使う ── Ubuntu Weekly Recipe</title>
+  <link href="http://gihyo.jp/admin/serial/01/ubuntu-recipe/0512"/>
+  <id>http://gihyo.jp/admin/serial/01/ubuntu-recipe/0512</id>
+  <published>2018-03-14T10:15:00+09:00</published>
+  <updated>2018-03-14T10:15:00+09:00</updated>
+ <author>
+  <name>柴田充也</name>
+ </author>
+  <category scheme="http://gihyo.jp/admin/serial/01/ubuntu-recipe" term="Ubuntu Weekly Recipe" xml:lang="ja" />
+  <summary>今回はキーボード付きAndroid端末であるGemini PDAにTermuxをインストールして，Ubuntu端末っぽく使う方法を紹介します。</summary>
+ </entry>
+ <entry>
+  <title>レノボ・ジャパン，教育市場向けPC「Lenovo 300e」「Lenovo 500e」を発表，Chrome OSを搭載したICT端末 ── ニュースリリース</title>
+  <link href="http://gihyo.jp/news/nr/2018/03/1301"/>
+  <id>http://gihyo.jp/news/nr/2018/03/1301</id>
+  <published>2018-03-13T17:30:00+09:00</published>
+  <updated>2018-03-13T17:30:00+09:00</updated>
+ <author>
+  <name>馮富久</name>
+ </author>
+  <category scheme="http://gihyo.jp/news/nr" term="ニュースリリース" xml:lang="ja" />
+  <summary>レノボ・ジャパン株式会社は2018年3月13日，教育市場をターゲットにした端末「Lenovo 300e」「Lenovo 500e」を発表した。</summary>
+ </entry>
+ <entry>
+  <title>2018年3月13日　IoTのデファクトをめざして ―「Fedora IoT」ワーキンググループがスタート ── Linux Daily Topics</title>
+  <link href="http://gihyo.jp/admin/clip/01/linux_dt/201803/13"/>
+  <id>http://gihyo.jp/admin/clip/01/linux_dt/201803/13</id>
+  <published>2018-03-13T14:27:00+09:00</published>
+  <updated>2018-03-13T14:27:00+09:00</updated>
+ <author>
+  <name>階戸アキラ</name>
+ </author>
+  <category scheme="http://gihyo.jp/admin/clip/01/linux_dt" term="Linux Daily Topics" xml:lang="ja" />
+  <summary>早ければ2018年中にFedoraから新しいエディションが誕生することになりそうだ。</summary>
+ </entry>
+ <entry>
+  <title>2018年3月9日　春のWindowsアップデートはLinuxづくし!? Linux開発者向けの新機能をおさらい ── Linux Daily Topics</title>
+  <link href="http://gihyo.jp/admin/clip/01/linux_dt/201803/09"/>
+  <id>http://gihyo.jp/admin/clip/01/linux_dt/201803/09</id>
+  <published>2018-03-09T18:18:00+09:00</published>
+  <updated>2018-03-09T18:18:00+09:00</updated>
+ <author>
+  <name>階戸アキラ</name>
+ </author>
+  <category scheme="http://gihyo.jp/admin/clip/01/linux_dt" term="Linux Daily Topics" xml:lang="ja" />
+  <summary>Microsoftはまもなく「Spring Update」と称したWindows 10の大幅アップデート（バージョン1803）を発表する予定で，UbuntuやDebianの対応もここに含まれている。</summary>
+ </entry>
+ <entry>
+  <title>2018年3月9日号　Ubuntu 16.04.4 LTSのリリース，Hyper-V Quick Create VM gallery への収録，Spectre/Meltdown対策さらにさらにその後・3月初旬編（続） ── Ubuntu Weekly Topics</title>
+  <link href="http://gihyo.jp/admin/clip/01/ubuntu-topics/201803/09"/>
+  <id>http://gihyo.jp/admin/clip/01/ubuntu-topics/201803/09</id>
+  <published>2018-03-09T10:43:00+09:00</published>
+  <updated>2018-03-09T10:43:00+09:00</updated>
+ <author>
+  <name>吉田史</name>
+ </author>
+  <category scheme="http://gihyo.jp/admin/clip/01/ubuntu-topics" term="Ubuntu Weekly Topics" xml:lang="ja" />
+  <summary>3月1日（現地時間）に，Ubuntu 16.04 LTS系列の4回目のポイントリリースとなる16.04.4 LTSがリリースされました。また，MicrosoftとCanonicalの連携により，Bionic（18.04 LTS）には大きな新機能が提供されそうです。
+</summary>
+ </entry>
+ <entry>
+  <title>第139回　OpenBSD，Meltdownバイナリパッチ提供開始 ── BSD界隈四方山話</title>
+  <link href="http://gihyo.jp/admin/serial/01/bsd-yomoyama/0139"/>
+  <id>http://gihyo.jp/admin/serial/01/bsd-yomoyama/0139</id>
+  <published>2018-03-09T09:30:00+09:00</published>
+  <updated>2018-03-09T09:30:00+09:00</updated>
+ <author>
+  <name>後藤大地</name>
+ </author>
+  <category scheme="http://gihyo.jp/admin/serial/01/bsd-yomoyama" term="BSD界隈四方山話" xml:lang="ja" />
+  <summary>OpenBSDの開発版に実装されたプロセッサ脆弱性Meltdown対応コードがOpenBSD 6.1およびOpenBSD 6.2にもバックポートされました。</summary>
+ </entry>
+ <entry>
+  <title>Fluentd，EmbulkなどTreasure Dataの最新技術を総チェック！ 「TD Tech Talk 2018」レポート ── レポート</title>
+  <link href="http://gihyo.jp/news/report/2018/03/0801"/>
+  <id>http://gihyo.jp/news/report/2018/03/0801</id>
+  <published>2018-03-08T13:31:00+09:00</published>
+  <updated>2018-03-08T13:31:00+09:00</updated>
+ <author>
+  <name></name>
+ </author>
+  <category scheme="http://gihyo.jp/news/report" term="レポート" xml:lang="ja" />
+  <summary>トレジャーデータ（株）は，2月19日（月）～21日（水）の3日間，東京都丸の内（JP TOWERほか）にてプライベートイベント「TREASURE DATA“PLAZMA”」を開催しました。</summary>
+ </entry>
+ <entry>
+  <title>2018年3月第2週　MWC2018にてAndroid Oreo（Go edition）端末が8メーカから発表 ── Android Weekly Topics</title>
+  <link href="http://gihyo.jp/lifestyle/clip/01/awt/201803/08"/>
+  <id>http://gihyo.jp/lifestyle/clip/01/awt/201803/08</id>
+  <published>2018-03-08T09:31:00+09:00</published>
+  <updated>2018-03-08T09:31:00+09:00</updated>
+ <author>
+  <name>傍島康雄</name>
+ </author>
+  <category scheme="http://gihyo.jp/lifestyle/clip/01/awt" term="Android Weekly Topics" xml:lang="ja" />
+  <summary>2018年3月第2集のAndroid関連のニュースをお届けします。</summary>
+ </entry>
+ <entry>
+  <title>2018年3月第2週号 1位は，画像最適化のための10のヒント，気になるネタは，犬目線のストリートビューで，戌年を楽しもう ── 週刊Webテク通信</title>
+  <link href="http://gihyo.jp/design/clip/01/weekly-web-tech/201803/08"/>
+  <id>http://gihyo.jp/design/clip/01/weekly-web-tech/201803/08</id>
+  <published>2018-03-08T09:30:00+09:00</published>
+  <updated>2018-03-08T09:30:00+09:00</updated>
+ <author>
+  <name>芦之由</name>
+ </author>
+  <category scheme="http://gihyo.jp/design/clip/01/weekly-web-tech" term="週刊Webテク通信" xml:lang="ja" />
+  <summary>ネットで見かけたWebテク（Webテクニック・Webテクノロジー）記事から，Webデザイナーの目で厳選したネタを週刊で紹介するこのコーナー。今回は，2018年2月26日～3月4日の間に見つけた記事のベスト5です。</summary>
+ </entry>
+ <entry>
+  <title>横浜で始まった自動運転の社会と未来～Easy Ride試乗モニタレポート ── レポート</title>
+  <link href="http://gihyo.jp/news/report/2018/03/0701"/>
+  <id>http://gihyo.jp/news/report/2018/03/0701</id>
+  <published>2018-03-07T17:02:00+09:00</published>
+  <updated>2018-03-07T17:02:00+09:00</updated>
+ <author>
+  <name>馮富久</name>
+ </author>
+  <category scheme="http://gihyo.jp/news/report" term="レポート" xml:lang="ja" />
+  <summary>2017年3月に実証実験が始まった自動運転車両を活用した新交通サービスプラットフォーム「Easy Ride」。今回，試乗する機会を得たのでその模様をお届けします。</summary>
+ </entry>
+ <entry>
+  <title>2018年3月7日　ついにDebian on Windowsが登場！ Microsoft，Windows StoreでDebianを提供へ ── Linux Daily Topics</title>
+  <link href="http://gihyo.jp/admin/clip/01/linux_dt/201803/07"/>
+  <id>http://gihyo.jp/admin/clip/01/linux_dt/201803/07</id>
+  <published>2018-03-07T14:56:00+09:00</published>
+  <updated>2018-03-07T14:56:00+09:00</updated>
+ <author>
+  <name>階戸アキラ</name>
+ </author>
+  <category scheme="http://gihyo.jp/admin/clip/01/linux_dt" term="Linux Daily Topics" xml:lang="ja" />
+  <summary>Microsoftは3月6日，Windows Store上で提供するLinuxディストリビューションのひとつとしてDebianを追加したことを発表した。</summary>
+ </entry>
+</feed>

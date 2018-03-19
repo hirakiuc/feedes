@@ -25,12 +25,6 @@ module Feedes
       def found_chars(_path, _name, _string); end
       #-------------------------------------------
 
-      def start_element(name, attrs = {})
-        push_stack(name)
-        @buffer = ''
-        begin_element(path(), name_with_ns(name), convert_attr_hash(attrs))
-      end
-
       def start_element_namespace(
         name, attrs = [], prefix = nil, _uri = nil, _ns = []
       )
@@ -45,15 +39,6 @@ module Feedes
 
       def characters(str)
         @buffer += str
-      end
-
-      def end_element(name)
-        found_chars(path(), name_with_ns(name), @buffer) unless @buffer.empty?
-
-        @buffer = ''
-
-        finish_element(path, name_with_ns(name))
-        pop_stack()
       end
 
       def end_element_namespace(name, prefix = nil, _uri = nil)

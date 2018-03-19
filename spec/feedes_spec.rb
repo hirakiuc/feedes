@@ -1,11 +1,11 @@
-require "spec_helper"
+require 'spec_helper'
 
 RSpec.describe Feedes do
-  it "has a version number" do
+  it 'has a version number' do
     expect(Feedes::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it 'respond to fetch' do
+
   end
 end

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+  xmlns="http://purl.org/rss/1.0/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:mn="http://usefulinc.com/rss/manifest/"
+  xml:lang="ja">
+
+ <channel>
+  <title>gihyo.jp：総合</title>
+  <link>http://gihyo.jp/</link>
+  <description>gihyo.jp（総合）の更新情報をお届けします</description>
+  <dc:language>ja-jp</dc:language>
+  <dc:publisher>技術評論社</dc:publisher>
+  <dc:rights>技術評論社 2018</dc:rights>
+  <image rdf:resource="http://gihyo.jp/assets/templates/gihyojp2007/image/header_logo_gihyo.gif"/>
+  <items>
+   <rdf:Seq>
+    <rdf:li rdf:resource="http://gihyo.jp/dev/serial/01/swift-introduction/0035"/>
+    <rdf:li rdf:resource="http://gihyo.jp/dev/serial/01/funny-play/0123"/>
+    <rdf:li rdf:resource="http://gihyo.jp/admin/clip/01/ubuntu-topics/201803/16"/>
+    <rdf:li rdf:resource="http://gihyo.jp/admin/serial/01/bsd-yomoyama/0140"/>
+    <rdf:li rdf:resource="http://gihyo.jp/news/nr/2018/03/1501"/>
+    <rdf:li rdf:resource="http://gihyo.jp/dev/serial/01/voiceui/0001"/>
+    <rdf:li rdf:resource="http://gihyo.jp/lifestyle/clip/01/awt/201803/15"/>
+    <rdf:li rdf:resource="http://gihyo.jp/design/clip/01/weekly-web-tech/201803/15"/>
+    <rdf:li rdf:resource="http://gihyo.jp/admin/clip/01/linux_dt/201803/14"/>
+    <rdf:li rdf:resource="http://gihyo.jp/admin/serial/01/ubuntu-recipe/0512"/>
+    <rdf:li rdf:resource="http://gihyo.jp/news/nr/2018/03/1301"/>
+    <rdf:li rdf:resource="http://gihyo.jp/admin/clip/01/linux_dt/201803/13"/>
+    <rdf:li rdf:resource="http://gihyo.jp/admin/clip/01/linux_dt/201803/09"/>
+    <rdf:li rdf:resource="http://gihyo.jp/admin/clip/01/ubuntu-topics/201803/09"/>
+    <rdf:li rdf:resource="http://gihyo.jp/admin/serial/01/bsd-yomoyama/0139"/>
+    <rdf:li rdf:resource="http://gihyo.jp/news/report/2018/03/0801"/>
+    <rdf:li rdf:resource="http://gihyo.jp/lifestyle/clip/01/awt/201803/08"/>
+    <rdf:li rdf:resource="http://gihyo.jp/design/clip/01/weekly-web-tech/201803/08"/>
+    <rdf:li rdf:resource="http://gihyo.jp/news/report/2018/03/0701"/>
+    <rdf:li rdf:resource="http://gihyo.jp/admin/clip/01/linux_dt/201803/07"/>
+   </rdf:Seq>
+  </items>
+
+ </channel>
+
+ <image rdf:about="http://gihyo.jp/assets/templates/gihyojp2007/image/header_logo_gihyo.gif">
+  <title>gihyo.jp</title>
+  <link>http://gihyo.jp/</link>
+  <url>http://gihyo.jp/assets/templates/gihyojp2007/image/header_logo_gihyo.gif</url>
+ </image>
+ <item rdf:about="http://gihyo.jp/dev/serial/01/swift-introduction/0035">
+  <title>第35回　Meltdown and Spectre ── 書いて覚えるSwift入門</title>
+  <link>http://gihyo.jp/dev/serial/01/swift-introduction/0035</link>
+  <description>2018年最初の大ニュースといえば，本誌Software Designの読者には毎号おなじみの結城浩さん，ではなくてMeltdown and Spectre。</description>
+  <dc:date>2018-03-19T09:31:00+09:00</dc:date>
+  <dc:subject>書いて覚えるSwift入門</dc:subject>
+  <dc:creator>小飼弾</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/dev/serial/01/funny-play/0123">
+  <title>第123回　カード並べ ── きたみりゅうじの聞かせて珍プレー</title>
+  <link>http://gihyo.jp/dev/serial/01/funny-play/0123</link>
+  <description>私が新人のころなので約30年前のお話です。当時，某電気メーカーのメインフレームを使い，5～6人で仕事をしておりました。</description>
+  <dc:date>2018-03-19T09:30:00+09:00</dc:date>
+  <dc:subject>きたみりゅうじの聞かせて珍プレー</dc:subject>
+  <dc:creator>きたみりゅうじ</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/admin/clip/01/ubuntu-topics/201803/16">
+  <title>2018年3月16日号　Spectre/Meltdown対策さらにさらにその後・新マイクロコードの配布の準備，FirefoxとChromiumのSnapパッケージ ── Ubuntu Weekly Topics</title>
+  <link>http://gihyo.jp/admin/clip/01/ubuntu-topics/201803/16</link>
+  <description>“Spectre”対策において必要なIntelのマイクロコードの提供が再開されたため，Ubuntuでもintel-microcodeパッケージのテストが開始されています。</description>
+  <dc:date>2018-03-16T10:11:00+09:00</dc:date>
+  <dc:subject>Ubuntu Weekly Topics</dc:subject>
+  <dc:creator>吉田史</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/admin/serial/01/bsd-yomoyama/0140">
+  <title>第140回　AsiaBSDCon 2018 ── BSD界隈四方山話</title>
+  <link>http://gihyo.jp/admin/serial/01/bsd-yomoyama/0140</link>
+  <description>2018年3月8～11日までの4日間，*BSDの国際会議であるAsiaBSDCon 2018が開催されました。</description>
+  <dc:date>2018-03-16T09:30:00+09:00</dc:date>
+  <dc:subject>BSD界隈四方山話</dc:subject>
+  <dc:creator>後藤大地</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/news/nr/2018/03/1501">
+  <title>NTTスマートコネクト，クラウド上でセキュリティ機能を提供開始 ── ニュースリリース</title>
+  <link>http://gihyo.jp/news/nr/2018/03/1501</link>
+  <description>エヌ・ティ・ティ・スマートコネクト（株）は，2018年4月2日（月）より，ネットワークセキュリティ機能をクラウド上で提供する新たなサービス「SmartConnect Network &amp; Security」を開始する。</description>
+  <dc:date>2018-03-15T18:19:00+09:00</dc:date>
+  <dc:subject>ニュースリリース</dc:subject>
+  <dc:creator>技術評論社</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/dev/serial/01/voiceui/0001">
+  <title>第1回　スマートスピーカーを支える技術 ── 優しいUI～ボイスユーザインターフェースで変わるコト</title>
+  <link>http://gihyo.jp/dev/serial/01/voiceui/0001</link>
+  <description>2017年，日本国内でいくつかのスマートスピーカーが登場しました。まず，その周辺の動向について紹介します。</description>
+  <dc:date>2018-03-15T13:20:00+09:00</dc:date>
+  <dc:subject>優しいUI～ボイスユーザインターフェースで変わるコト</dc:subject>
+  <dc:creator>傍島康雄</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/lifestyle/clip/01/awt/201803/15">
+  <title>2018年3月第3週　次期OS「Android P」の開発者向けプレビュー版が公開 ── Android Weekly Topics</title>
+  <link>http://gihyo.jp/lifestyle/clip/01/awt/201803/15</link>
+  <description>2018年3月第3週のAndroid関連のニュースをお届けします。</description>
+  <dc:date>2018-03-15T09:31:00+09:00</dc:date>
+  <dc:subject>Android Weekly Topics</dc:subject>
+  <dc:creator>傍島康雄</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/design/clip/01/weekly-web-tech/201803/15">
+  <title>2018年3月第3週号 1位は，良い事例から学ぶランディングページを改善するためのヒント，気になるネタは，LINEのタブに「LINEウォレット」が出現--決済・金融サービスを集約 ── 週刊Webテク通信</title>
+  <link>http://gihyo.jp/design/clip/01/weekly-web-tech/201803/15</link>
+  <description>ネットで見かけたWebテク（Webテクニック・Webテクノロジー）記事から，Webデザイナーの目で厳選したネタを週刊で紹介するこのコーナー。今回は，2018年3月5日～3月11日の間に見つけた記事のベスト5です。</description>
+  <dc:date>2018-03-15T09:30:00+09:00</dc:date>
+  <dc:subject>週刊Webテク通信</dc:subject>
+  <dc:creator>芦之由</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/admin/clip/01/linux_dt/201803/14">
+  <title>2018年3月14日　Ubuntu，圧縮アルゴリズムzstdをサポートへ ── Linux Daily Topics</title>
+  <link>http://gihyo.jp/admin/clip/01/linux_dt/201803/14</link>
+  <description>UbuntuのコアデベロッパJulian Andres Klodeは3月12日，Ubuntu 18.04 LTSから，圧縮アルゴリズム「zstd」をdpkgおよびaptパッケージの圧縮に実装することを明らかにした。</description>
+  <dc:date>2018-03-14T18:02:00+09:00</dc:date>
+  <dc:subject>Linux Daily Topics</dc:subject>
+  <dc:creator>階戸アキラ</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/admin/serial/01/ubuntu-recipe/0512">
+  <title>第512回　AndroidのGemini PDAをUbuntu端末っぽく使う ── Ubuntu Weekly Recipe</title>
+  <link>http://gihyo.jp/admin/serial/01/ubuntu-recipe/0512</link>
+  <description>今回はキーボード付きAndroid端末であるGemini PDAにTermuxをインストールして，Ubuntu端末っぽく使う方法を紹介します。</description>
+  <dc:date>2018-03-14T10:15:00+09:00</dc:date>
+  <dc:subject>Ubuntu Weekly Recipe</dc:subject>
+  <dc:creator>柴田充也</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/news/nr/2018/03/1301">
+  <title>レノボ・ジャパン，教育市場向けPC「Lenovo 300e」「Lenovo 500e」を発表，Chrome OSを搭載したICT端末 ── ニュースリリース</title>
+  <link>http://gihyo.jp/news/nr/2018/03/1301</link>
+  <description>レノボ・ジャパン株式会社は2018年3月13日，教育市場をターゲットにした端末「Lenovo 300e」「Lenovo 500e」を発表した。</description>
+  <dc:date>2018-03-13T17:30:00+09:00</dc:date>
+  <dc:subject>ニュースリリース</dc:subject>
+  <dc:creator>馮富久</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/admin/clip/01/linux_dt/201803/13">
+  <title>2018年3月13日　IoTのデファクトをめざして ―「Fedora IoT」ワーキンググループがスタート ── Linux Daily Topics</title>
+  <link>http://gihyo.jp/admin/clip/01/linux_dt/201803/13</link>
+  <description>早ければ2018年中にFedoraから新しいエディションが誕生することになりそうだ。</description>
+  <dc:date>2018-03-13T14:27:00+09:00</dc:date>
+  <dc:subject>Linux Daily Topics</dc:subject>
+  <dc:creator>階戸アキラ</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/admin/clip/01/linux_dt/201803/09">
+  <title>2018年3月9日　春のWindowsアップデートはLinuxづくし!? Linux開発者向けの新機能をおさらい ── Linux Daily Topics</title>
+  <link>http://gihyo.jp/admin/clip/01/linux_dt/201803/09</link>
+  <description>Microsoftはまもなく「Spring Update」と称したWindows 10の大幅アップデート（バージョン1803）を発表する予定で，UbuntuやDebianの対応もここに含まれている。</description>
+  <dc:date>2018-03-09T18:18:00+09:00</dc:date>
+  <dc:subject>Linux Daily Topics</dc:subject>
+  <dc:creator>階戸アキラ</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/admin/clip/01/ubuntu-topics/201803/09">
+  <title>2018年3月9日号　Ubuntu 16.04.4 LTSのリリース，Hyper-V Quick Create VM gallery への収録，Spectre/Meltdown対策さらにさらにその後・3月初旬編（続） ── Ubuntu Weekly Topics</title>
+  <link>http://gihyo.jp/admin/clip/01/ubuntu-topics/201803/09</link>
+  <description>3月1日（現地時間）に，Ubuntu 16.04 LTS系列の4回目のポイントリリースとなる16.04.4 LTSがリリースされました。また，MicrosoftとCanonicalの連携により，Bionic（18.04 LTS）には大きな新機能が提供されそうです。
+</description>
+  <dc:date>2018-03-09T10:43:00+09:00</dc:date>
+  <dc:subject>Ubuntu Weekly Topics</dc:subject>
+  <dc:creator>吉田史</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/admin/serial/01/bsd-yomoyama/0139">
+  <title>第139回　OpenBSD，Meltdownバイナリパッチ提供開始 ── BSD界隈四方山話</title>
+  <link>http://gihyo.jp/admin/serial/01/bsd-yomoyama/0139</link>
+  <description>OpenBSDの開発版に実装されたプロセッサ脆弱性Meltdown対応コードがOpenBSD 6.1およびOpenBSD 6.2にもバックポートされました。</description>
+  <dc:date>2018-03-09T09:30:00+09:00</dc:date>
+  <dc:subject>BSD界隈四方山話</dc:subject>
+  <dc:creator>後藤大地</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/news/report/2018/03/0801">
+  <title>Fluentd，EmbulkなどTreasure Dataの最新技術を総チェック！ 「TD Tech Talk 2018」レポート ── レポート</title>
+  <link>http://gihyo.jp/news/report/2018/03/0801</link>
+  <description>トレジャーデータ（株）は，2月19日（月）～21日（水）の3日間，東京都丸の内（JP TOWERほか）にてプライベートイベント「TREASURE DATA“PLAZMA”」を開催しました。</description>
+  <dc:date>2018-03-08T13:31:00+09:00</dc:date>
+  <dc:subject>レポート</dc:subject>
+  <dc:creator></dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/lifestyle/clip/01/awt/201803/08">
+  <title>2018年3月第2週　MWC2018にてAndroid Oreo（Go edition）端末が8メーカから発表 ── Android Weekly Topics</title>
+  <link>http://gihyo.jp/lifestyle/clip/01/awt/201803/08</link>
+  <description>2018年3月第2集のAndroid関連のニュースをお届けします。</description>
+  <dc:date>2018-03-08T09:31:00+09:00</dc:date>
+  <dc:subject>Android Weekly Topics</dc:subject>
+  <dc:creator>傍島康雄</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/design/clip/01/weekly-web-tech/201803/08">
+  <title>2018年3月第2週号 1位は，画像最適化のための10のヒント，気になるネタは，犬目線のストリートビューで，戌年を楽しもう ── 週刊Webテク通信</title>
+  <link>http://gihyo.jp/design/clip/01/weekly-web-tech/201803/08</link>
+  <description>ネットで見かけたWebテク（Webテクニック・Webテクノロジー）記事から，Webデザイナーの目で厳選したネタを週刊で紹介するこのコーナー。今回は，2018年2月26日～3月4日の間に見つけた記事のベスト5です。</description>
+  <dc:date>2018-03-08T09:30:00+09:00</dc:date>
+  <dc:subject>週刊Webテク通信</dc:subject>
+  <dc:creator>芦之由</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/news/report/2018/03/0701">
+  <title>横浜で始まった自動運転の社会と未来～Easy Ride試乗モニタレポート ── レポート</title>
+  <link>http://gihyo.jp/news/report/2018/03/0701</link>
+  <description>2017年3月に実証実験が始まった自動運転車両を活用した新交通サービスプラットフォーム「Easy Ride」。今回，試乗する機会を得たのでその模様をお届けします。</description>
+  <dc:date>2018-03-07T17:02:00+09:00</dc:date>
+  <dc:subject>レポート</dc:subject>
+  <dc:creator>馮富久</dc:creator>
+ </item> <item rdf:about="http://gihyo.jp/admin/clip/01/linux_dt/201803/07">
+  <title>2018年3月7日　ついにDebian on Windowsが登場！ Microsoft，Windows StoreでDebianを提供へ ── Linux Daily Topics</title>
+  <link>http://gihyo.jp/admin/clip/01/linux_dt/201803/07</link>
+  <description>Microsoftは3月6日，Windows Store上で提供するLinuxディストリビューションのひとつとしてDebianを追加したことを発表した。</description>
+  <dc:date>2018-03-07T14:56:00+09:00</dc:date>
+  <dc:subject>Linux Daily Topics</dc:subject>
+  <dc:creator>階戸アキラ</dc:creator>
+ </item></rdf:RDF>
