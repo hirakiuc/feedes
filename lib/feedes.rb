@@ -11,7 +11,7 @@ require_relative './feedes/result.rb'
 module Feedes
   class << self
     def fetch(url, options = {})
-      res = Fetcher.new.fetch(url, options)
+      res = Fetcher.new(options).fetch(url)
       parser = Parser.new(options[:type] || :guess)
       result = parser.parse(res.body)
 
