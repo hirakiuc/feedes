@@ -1,5 +1,9 @@
 # Feedes
 
+[![CircleCI](https://circleci.com/gh/hirakiuc/feedes/tree/master.svg?style=shield&circle-token=d375d3cf61a645a3fb5e46bd4bebe6c24382b029)](https://circleci.com/gh/hirakiuc/feedes/tree/master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/50376b7f8db3311a51a1/maintainability)](https://codeclimate.com/github/hirakiuc/feedes/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/50376b7f8db3311a51a1/test_coverage)](https://codeclimate.com/github/hirakiuc/feedes/test_coverage)
+
 A ruby library to fetch and parse rss feed.
 
 This gem supports RSS1.0(RDF), RSS2.0, Atom.
