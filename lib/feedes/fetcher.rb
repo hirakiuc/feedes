@@ -71,7 +71,6 @@ module Feedes
       options = request_options(method, uri, headers)
       @response = RestClient::Request.execute(options)
 
-      content_type = @response.headers[:content_type]
       raise "Got http status code(#{@response.code}) by #{method} request from #{uri}" \
         unless @response.code == 200
 
