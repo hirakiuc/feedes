@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "sinatra", "~> 2.0.1"
   spec.add_development_dependency "webmock", "~> 3.3.0"
   spec.add_development_dependency 'simplecov', '0.14.1'
+  spec.add_development_dependency 'yard', '0.9.12'
   spec.add_dependency 'nokogiri', '~> 1.8.2'
   spec.add_dependency 'rest-client', '~> 2.0.2'
 end
