@@ -8,6 +8,8 @@ A ruby library to fetch and parse rss feed.
 
 This gem supports RSS1.0(RDF), RSS2.0, Atom.
 
+WARN: This gem contains very simple SAX parsers to parse feeds. So some this gem does not support complex XML.
+
 ## Installation
 
 Add this line to your application's Gemfile:
