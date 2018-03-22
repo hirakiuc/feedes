@@ -19,10 +19,10 @@ module Feedes
     def parse(xml)
       @type = guess_type(xml) if @type == :guess
 
-      @parser = get_parser(guess_type(xml))
-      @parser.parse(xml)
+      parser = get_parser(guess_type(xml))
+      parser.parse(xml)
 
-      wrap_result(@parser, @type)
+      wrap_result(parser, @type)
     end
 
     private
