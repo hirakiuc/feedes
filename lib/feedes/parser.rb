@@ -6,19 +6,23 @@ require_relative './document/rss.rb'
 require_relative './document/atom.rb'
 require_relative './document/guess.rb'
 
-require_relative './result.rb'
+require_relative './model/atom_feed.rb'
+require_relative './model/rdf_feed.rb'
+require_relative './model/rss_feed.rb'
 
 module Feedes
   class Parser
-    def initialize(type)
-      @parser = get_parser(type)
+    def initialize(type = :guess)
+      @type = type
     end
 
     def parse(xml)
-      @parser = get_parser(guess_type(xml)) if @parser.nil?
+      @type = guess_type(xml) if @type == :guess
+
+      @parser = get_parser(guess_type(xml))
       @parser.parse(xml)
 
-      @parser.document
+      wrap_result(@parser, @type)
     end
 
     private
@@ -42,6 +46,23 @@ module Feedes
       when :rdf   then Feedes::Document::Rdf.new
       when :guess then Feedes::Document::Guess.new
       else             throw "UnSupported type: #{type}"
+      end
+    end
+
+    def wrap_result(parser, type)
+      doc = parser.document
+
+      cls = get_feed_class(type)
+
+      cls.new(doc.feed_meta, doc.items)
+    end
+
+    def get_feed_class(type)
+      case type
+      when :atom then Feedes::Model::AtomFeed
+      when :rdf then Feedes::Model::RdfFeed
+      when :rss then Feedes::Model::RssFeed
+      else       throw "UnSupported type: #{type}"
       end
     end
   end

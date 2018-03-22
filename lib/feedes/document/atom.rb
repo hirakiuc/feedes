@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative './atom_item.rb'
+require_relative '../model/atom_item.rb'
 
 module Feedes
   module Document
@@ -37,7 +37,7 @@ module Feedes
         return unless path == '//feed/entry'
         return if @result.empty?
 
-        @items.push(AtomItem.new(@result))
+        @items.push(::Feedes::Model::AtomItem.new(@result))
         @result = {}
       end
 

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe Feedes::Document::RssItem do
+RSpec.describe Feedes::Model::RssItem do
   describe 'new' do
     it 'should create new instance' do
       attrs = {
@@ -10,8 +10,8 @@ RSpec.describe Feedes::Document::RssItem do
         link: 'http://example.com/feed.rss'
       }
 
-      m = Feedes::Document::RssItem.new(attrs)
-      expect(m).to be_an_instance_of(Feedes::Document::RssItem)
+      m = Feedes::Model::RssItem.new(attrs)
+      expect(m).to be_an_instance_of(Feedes::Model::RssItem)
       expect(m.title).to eq(attrs[:title])
       expect(m.description).to eq(attrs[:description])
       expect(m.date).to eq(attrs[:pubDate])

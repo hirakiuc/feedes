@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative './rdf_item.rb'
+require_relative '../model/rdf_item.rb'
 
 module Feedes
   module Document
@@ -20,7 +20,7 @@ module Feedes
         return unless path == '//rdf:RDF/item'
         return if @result.empty?
 
-        @items.push(RdfItem.new(@result))
+        @items.push(::Feedes::Model::RdfItem.new(@result))
         @result = {}
       end
 

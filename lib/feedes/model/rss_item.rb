@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Feedes
-  module Document
+  module Model
     class RssItem
       attr_reader :title, :description, :date, :url, :attrs
 
