@@ -3,7 +3,7 @@
 require 'nokogiri'
 
 require_relative './feedes/fetcher.rb'
-require_relative './feedes/parser.rb'
+require_relative './feedes/parser/feed_parser.rb'
 require_relative './feedes/version.rb'
 
 require_relative './feedes/model/base_feed.rb'
@@ -18,7 +18,7 @@ module Feedes
     # @option options [Array] :content_types Array of acceptable content-type strings.
     def fetch(url, options = {})
       res = Fetcher.new(options).fetch(url)
-      parser = Parser.new(options[:type] || :guess)
+      parser = Parser::FeedParser.new(options[:type] || :guess)
 
       parser.parse(res.body)
     end
