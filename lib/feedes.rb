@@ -24,3 +24,5 @@ module Feedes
     end
   end
 end
+
+require_relative './feedes/hatena.rb'
