@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Feedes
-  module Document
+  module Model
     class RdfItem
       attr_reader :title, :description, :date, :url, :attrs
 

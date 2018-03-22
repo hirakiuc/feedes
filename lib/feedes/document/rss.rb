@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative './rss_item.rb'
+require_relative '../model/rss_item.rb'
 
 module Feedes
   module Document
@@ -11,7 +11,7 @@ module Feedes
         return unless path == '//rss/channel/item'
         return if @result.empty?
 
-        @items.push(RssItem.new(@result))
+        @items.push(::Feedes::Model::RssItem.new(@result))
         @result = {}
       end
 

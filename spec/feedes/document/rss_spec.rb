@@ -19,7 +19,7 @@ RSpec.describe Feedes::Document::Rss do
 
       expect(doc.items.size).to eq(20)
       doc.items.each do |item|
-        expect(item).to be_an_instance_of(Feedes::Document::RssItem)
+        expect(item).to be_an_instance_of(Feedes::Model::RssItem)
         expect(item.title).not_to be_nil
         expect(item.description).not_to be_nil
         expect(item.date).not_to be_nil

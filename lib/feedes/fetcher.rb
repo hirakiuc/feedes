@@ -18,7 +18,8 @@ module Feedes
         application/atom+xml
         application/x.atom+xml
         application/rss+xml
-        application/xml
+        application/
+        text/xml
       ).concat(options[:content_types] || []).uniq
     end
 

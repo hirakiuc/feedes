@@ -6,7 +6,7 @@ require_relative './feedes/fetcher.rb'
 require_relative './feedes/parser.rb'
 require_relative './feedes/version.rb'
 
-require_relative './feedes/result.rb'
+require_relative './feedes/model/base_feed.rb'
 
 module Feedes
   class << self
@@ -19,9 +19,8 @@ module Feedes
     def fetch(url, options = {})
       res = Fetcher.new(options).fetch(url)
       parser = Parser.new(options[:type] || :guess)
-      result = parser.parse(res.body)
 
-      Result.new(result.feed_meta, result.items)
+      parser.parse(res.body)
     end
   end
 end
