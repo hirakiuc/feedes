@@ -56,7 +56,7 @@ Style/RedundantFreeze:
   Enabled: false
 
 Metrics/AbcSize:
-  Max: 20
+  Max: 22
 
 Metrics/LineLength:
   Max: 100
@@ -87,4 +87,7 @@ Style/SafeNavigation:
   Enabled: false
 
 Lint/DuplicateMethods:
+  Enabled: false
+
+Style/MultilineBlockChain:
   Enabled: false
