@@ -1,33 +1,33 @@
 require 'spec_helper'
 
-RSpec.describe Feedes::Parser do
+RSpec.describe Feedes::Parser::FeedParser do
   describe 'initialize' do
     context 'without argument' do
       it 'should create new instance' do
-        m = Feedes::Parser.new
-        expect(m).to be_an_instance_of(Feedes::Parser)
+        m = Feedes::Parser::FeedParser.new
+        expect(m).to be_an_instance_of(Feedes::Parser::FeedParser)
         expect(m.instance_variable_get(:@type)).to eq(:guess)
       end
     end
 
     context 'with type' do
       it 'should create new instance' do
-        m = Feedes::Parser.new(:rss)
-        expect(m).to be_an_instance_of(Feedes::Parser)
+        m = Feedes::Parser::FeedParser.new(:rss)
+        expect(m).to be_an_instance_of(Feedes::Parser::FeedParser)
         expect(m.instance_variable_get(:@type)).to eq(:rss)
       end
     end
   end
 
   describe '#parse' do
-    let(:parser) { Feedes::Parser.new(type) }
+    let(:parser) { Feedes::Parser::FeedParser.new(type) }
     let(:xml) { feed_xml(fname) }
 
     context 'when type is :guess' do
       let(:fname) { 'feed.rss' }
 
       it 'should guess and parse the xml' do
-        feed_parser = Feedes::Parser.new
+        feed_parser = Feedes::Parser::FeedParser.new
         result = feed_parser.parse(xml)
 
         expect(result).to be_an_instance_of(Feedes::Model::RssFeed)
@@ -65,11 +65,11 @@ RSpec.describe Feedes::Parser do
     end
 
     context 'when type is :invalid' do
-      it 'should throw error' do
-        xml = feed_xml('feed.rdf')
-        m = Feedes::Parser.new(:invalid)
+      let(:type) { :invalid }
+      let(:fname) { 'feed.rdf' }
 
-        expect { m.parse(xml) }.to raise_error(/UnSupported type/)
+      it 'should throw error' do
+        expect { parser.parse(xml) }.to raise_error(/UnSupported type/)
       end
     end
   end
