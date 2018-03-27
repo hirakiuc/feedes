@@ -34,35 +34,47 @@ module Feedes
       end
 
       def parse_entry(entry)
+        [
+          parse_entry_body(entry),
+          parse_entry_detail(entry),
+          { dc_subject: nil }
+        ].reduce({}) { |memo, h| memo.merge(h) }
+      end
+
+      def parse_entry_body(element)
         h = {}
 
-        content_users = entry.css('span.entrylist-contents-users').first
+        content_users = element.css('span.entrylist-contents-users').first
         h[:hatebu_count] = content_users.css('a span').text.to_i
 
-        content_title = entry.css('h3.entrylist-contents-title a').first
+        content_title = element.css('h3.entrylist-contents-title a').first
         h[:title] = content_title.attributes['title'].value
         h[:link] = content_title.attributes['href'].value
 
-        content_body = entry.css('div.entrylist-contents-body').first
+        content_body = element.css('div.entrylist-contents-body').first
         h[:desc] = content_body.css('p.entrylist-contents-description').text
         h[:desc].gsub!("\n", '') if h[:desc]
 
+        h
+      end
 
-        h[:dc_subject] = nil
+      def parse_entry_detail(element)
+        h = {}
 
-        issued_at_element = entry.css('li.date').first
+        content_meta = element.css('div.entrylist-contents-detail ul.entrylist-contents-meta').first
+
+        # category
+        category_element = content_meta.css('li.entrylist-contents-category a').first
+        h[:category] = category_element.text if category_element
+
+        issued_at_element = content_meta.css('li.entrylist-contents-date').first
         h[:dc_date] = \
           begin
-            Time.parse(issued_at_element) if issued_at_element
-          rescue
-            Time.now.ago(10.hours)
+            Time.parse(issued_at_element.text) if issued_at_element
+          rescue => e
+            pp e
+            Time.now
           end
-
-        category_element = entry.css('li.category a.category').first
-        content_detail = entry.css('div.entrylist-contents-detail').first
-
-        category_element = content_detail.css('li.entry-list-contents-category a').first
-        h[:category] = category_element.text if category_element
 
         h
       end
